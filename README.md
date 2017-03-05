@@ -42,3 +42,8 @@ The program using the following values when analyzing a given text to calculate 
 
 * The letter 'J' is given a value of 1 since it is often used to make the creation of a chronogram easier.
 * The letter 'U' is given a value of 5 since Latin did not have the letter 'U' (read more [here](http://blog.dictionary.com/theletteru/)).
+
+## Further Reading
+If you want to see more examples of chronograms have a look at the following book:
+
+[Chronograms: 5000 and More in Number](https://books.google.com/books?id=upQDAAAAYAAJ&printsec=frontcover&dq=chronogram&hl=en&sa=X&ved=0ahUKEwio_ZzXu77SAhVK4yYKHTjdDE4Q6AEIJTAD#v=onepage&q&f=false) by James Hilton, published in 1882
