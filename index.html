@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Chronogram Calculator</title>
     <script src="assets/chrono.js"></script>
+    <script>
+        function getChronogram(text) {
+            var chronogram = new Chronogram(text);
+            document.getElementById('letter-output').innerHTML = chronogram.used_characters.join("+");
+            document.getElementById('date-output').innerHTML = chronogram.date;
+        }
+    </script>
     <link rel="stylesheet" href="assets/chrono.css"/>
 </head>
 <body>
@@ -12,13 +19,15 @@
             <label for="chronogram-input">Chronogram:<br></label>
             <textarea rows="4" cols="50" id="chronogram-input"></textarea>
         </form>
-        <button type="button"
-                onclick="document.getElementById('date-output').innerHTML = CalculateChronogramDate(document.getElementById('chronogram-input').value).toString()">
+        <button type="button" onclick="getChronogram(document.getElementById('chronogram-input').value)">
             Calculate Date
         </button>
 
         <p></p>
+        Characters:<br>
+        <div id="letter-output"></div>
 
+        <p></p>
         Date:<br>
         <div id="date-output" class="output"></div>
     </div>
