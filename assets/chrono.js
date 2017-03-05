@@ -10,6 +10,11 @@ function Chronogram(text) {
                     date += 1;
                     used_characters.push(character);
                     break;
+                case 'J':
+                    console.log("Upper-case letter 'J' encountered. Assuming value of 1.");
+                    date += 1;
+                    used_characters.push(character);
+                    break;
                 case 'V':
                     date += 5;
                     used_characters.push(character);
