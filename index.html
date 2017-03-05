@@ -9,6 +9,7 @@
             var chronogram = new Chronogram(text);
             document.getElementById('letter-output').innerHTML = chronogram.used_characters.join("+");
             document.getElementById('date-output').innerHTML = chronogram.date;
+            document.getElementById('formatted-text-output').innerHTML = chronogram.formatted_text;
         }
     </script>
     <link rel="stylesheet" href="assets/chrono.css"/>
@@ -22,6 +23,10 @@
         <button type="button" onclick="getChronogram(document.getElementById('chronogram-input').value)">
             Calculate Date
         </button>
+
+        <p></p>
+        Formatted Text:<br>
+        <div id="formatted-text-output"></div>
 
         <p></p>
         Characters:<br>

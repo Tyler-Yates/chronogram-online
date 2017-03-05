@@ -52,4 +52,27 @@ function Chronogram(text) {
 
     this.date = date;
     this.used_characters = used_characters;
+    this.formatted_text = FormattedText(text);
+}
+
+/**
+ * @return {string}
+ */
+function FormattedText(text) {
+    var result = "";
+    for (var i = 0, len = text.length; i < len; i++) {
+        var character = text[i];
+        var upperCaseRegex = /[A-Z]/;
+        var lowerCaseRegex = /[a-z]/;
+
+        if (lowerCaseRegex.test(character)) {
+            result += "<span class='lower'>" + character.toUpperCase() + "</span>";
+        } else if (upperCaseRegex.test(character)) {
+            result += "<span class='upper'>" + character + "</span>";
+        } else {
+            result += character;
+        }
+    }
+
+    return result;
 }
