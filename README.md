@@ -31,6 +31,7 @@ The program using the following values when analyzing a given text to calculate 
 | Character | Value |
 |-----------|-------|
 | I         | 1     |
+| J         | 1     |
 | V         | 5     |
 | U         | 5     |
 | X         | 10    |
@@ -39,4 +40,5 @@ The program using the following values when analyzing a given text to calculate 
 | D         | 500   |
 | M         | 1000  |
 
-* The letter 'U' is given a value of 5 since Latin did not have the letter 'U'.
+* The letter 'J' is given a value of 1 since it is often used to make the creation of a chronogram easier.
+* The letter 'U' is given a value of 5 since Latin did not have the letter 'U' (read more [here](http://blog.dictionary.com/theletteru/)).
